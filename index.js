@@ -10,7 +10,11 @@ const app = express();
 // إعداد المنفذ ديناميكياً ليناسب موقع Render
 const PORT = process.env.PORT || 10000; 
 
-app.use(cors());
+app.use(cors({
+  origin: '*', // السماح لجميع المواقع بالاتصال بأمان
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
+}));
 app.use(express.json());
 
 // مسار ترحيبي بسيط للطالب
