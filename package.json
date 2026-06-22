@@ -1,15 +1,17 @@
 {
   "name": "edusource-backend",
   "version": "1.0.0",
+  "description": "EduSource Backend System",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
+    "@google/generative-ai": "^0.1.0",
+    "axios": "^1.6.8",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "@google/generative-ai": "^0.1.0",
-    "axios": "^1.6.8"
+    "express": "^4.19.2"
   }
 }
